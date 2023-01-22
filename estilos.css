@@ -1,0 +1,113 @@
+body {
+    font-family: 'Yanone Kaffeesatz';
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cabecalho .logo {
+    width: 80px;
+    height: 80px;
+    margin:0 0 0 30px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.cabecalho nav li a:hover {
+    background-color: red;
+}
+
+.container {
+    
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 132px);
+    padding: 100px 30px 30px;
+}
+
+.container .informacoes {
+    display: block;
+}
+
+.container .imagem-titulo {
+    width: 900px;
+    height: 400px;
+    padding: 0px 0px 0px 0px;
+}
+
+.container .descricao {
+    
+    color: #a8adb7;
+    width: 120%;
+    font-size: 20px;
+    margin: 0;
+    height: 300px;
+}
+
+.container .botao-compra {
+    background-color: red;
+    color: #ffffff;
+    padding: 15px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+}
+
+.container .botao-compra:hover {
+    transform: scale(1.1);
+}
+
+.fundo-video {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.fundo-video .video {
+    height: 100vh;
+}
+
+.fundo-video::after {
+    content: "";
+    background-color: #d5011d;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+.container .soldados {
+    padding: 0px 0px 0px 0px;
+    height: 400px;
+}
+
