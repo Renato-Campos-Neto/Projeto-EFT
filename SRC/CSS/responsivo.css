@@ -1,0 +1,53 @@
+@media (max-width: 1200px) {
+    body {
+        background-color: #020f00;
+    }
+    .fundo-video {
+        display: none;
+    }
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+    }
+    .container .soldados {
+        max-width: 90%;
+    }
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container .descricao {
+        text-align: center;
+        color: #ffffff;
+
+    }
+    .container .botao-compra {
+        background-color: #263238;
+    }
+}
+
+@media (max-width: 700px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .container .imagem-titulo {
+        max-width: 75%;
+    }
+    
+    .cabecalho nav li a {
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    .cabecalho nav li a {
+        padding: 15px 5px;
+        font-size: 20px;
+    }
+}

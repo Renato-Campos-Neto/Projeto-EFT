@@ -1,0 +1,90 @@
+body {
+    font-family:'Yanone Kaffeesatz';
+}
+
+.cabecalho {
+    display: flex;
+    max-width: 1820px;
+    margin: 0 0;
+}
+
+.cabecalho .logo {
+    width: 80px;
+    height: 80px;
+    margin:0 0 0 110px;
+}
+
+.cabecalho .titulo-cabecalho {
+    font-weight: bold;
+    font-size: 80px;
+    padding: 25px 400px;
+    color: #a8adb7;
+}
+
+.container {
+    display: flex;
+    margin: 0 0 0 110px;
+    align-items: center;
+    max-width: 1820px;
+    height: calc(100vh - 130px);
+}
+
+.container .informacoes {
+    height: 600px;
+    width: 800px;
+    display: block;
+    color: #a8adb7;
+}
+
+.container .informacoes .titulo-requisitos-minimos {
+    font-size: 45px;
+    padding: 30px 30px 20px 100px;
+}
+
+.container .informacoes .requisitos-minimos {
+    font-size: 25px;
+    padding: 0 0 0 40px;
+}
+
+.container .informacoes .titulo-requisitos-recomendados {
+    font-size: 45px;
+    padding: 30px 30px 20px 100px;
+}
+
+.container .informacoes .requisitos-recomendados {
+    font-size: 25px;
+    padding: 0 0 0 40px;
+}
+
+.container .imagem-soldados {
+    width: 800px;
+    height: 400px;
+    margin: 80px 0 0 0;
+}
+
+.fundo-video {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.fundo-video .video {
+    height: 100vh;
+}
+
+.fundo-video::after {
+    content: "";
+    background-color: #d5011d;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+
